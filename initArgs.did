@@ -1,0 +1,33 @@
+(
+  principal "pk6rk-6aaaa-aaaae-qaazq-cai",
+  record {
+    restoreEnabled = opt true;
+    name = "BTC Flower";
+    sale = variant { supply = 2009 };
+    salePrice = 500_000_000; // 5 ICP
+    publicSaleStart = 1642960800000000000; //  23.01.22
+    salesDistribution = vec {
+      record { "203b33afcfe22a3727be0a2eb1b90274d2c789754939e4671a7b2480e3d8c774"; 60000 }; // ludo
+      record { "20eacca23f6ff96941099da3cbf705f7466c1a7e963b87a4ec87be7d678f4a19"; 22000 }; // moritz
+      record { "abcb3306869feeab17b4e8b251f2aa26c633c97dc8cd5343583bc6e46413e4e4";  9000 }; // andrew
+      record { "5ec8e6e59bec11bc9033dbcd173fdefb9aaf4b917a950f87ad2ddf57e957283b";  9000 }; // evan
+    };
+    royalties = vec {
+      record { "203b33afcfe22a3727be0a2eb1b90274d2c789754939e4671a7b2480e3d8c774"; 4500 }; // ludo
+      record { "a60ee760948b2ce3e5d150cc65a429747a2e9182856233acdd14587afc08d3ee"; 1650 }; // moritz
+      record { "abcb3306869feeab17b4e8b251f2aa26c633c97dc8cd5343583bc6e46413e4e4";  675 }; // andrew
+      record { "5ec8e6e59bec11bc9033dbcd173fdefb9aaf4b917a950f87ad2ddf57e957283b";  675 }; // evan
+    };
+    marketplaces = vec {
+      // first marketplace is default
+      record { "entrepot"; "c7e461041c0c5800a56b64bb7cefc247abc0bbbb99bd46ff71c64e92d9f5c2f9"; 500 }; // total payout 1% (0.5% to seller marketplace, 0.5% to buyer marketplace)
+      record { "dgdg"; "1637b41f59e2cfe0d2cb343c2ac945dd494ee2d8e741db4daf6863a518bdb5d4"; 500 }; // total payout 1% (0.5% to seller marketplace, 0.5% to buyer marketplace)
+      record { "yumi"; "5780292b94594bfc2314f29a81bef85eed2938d89d9b825a4f0f07a8a88609bc"; 500 }; // total payout 1% (0.5% to seller marketplace, 0.5% to buyer marketplace)
+    };
+    revealDelay = variant { hours = 6 };
+    // double punk holders get airdrop
+    airdrop = vec {};
+    whitelists = vec {};
+    marketDelay = opt variant { seconds = 5 };
+  }
+)
