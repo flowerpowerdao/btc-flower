@@ -1,7 +1,6 @@
 (
   principal "pk6rk-6aaaa-aaaae-qaazq-cai",
   record {
-    restoreEnabled = opt true;
     name = "BTC Flower";
     sale = variant { supply = 2009 };
     salePrice = 500_000_000; // 5 ICP
